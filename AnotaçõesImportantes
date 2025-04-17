@@ -9,3 +9,37 @@ Machine Learning é o processo de aprendizado das máquinas, o que permite que e
 Deep Learning é o aprendizado profundo e contínuo.
 
 NLP - Processamento de Linguagem Natural (Interpretação de Texto)
+
+É possível implementar em nuvem e também podemos usar bibliotecas específicas.
+
+É possível aplicar para:
+  * Análise de Sentimento;
+  * Tradução (definir o contexto da tradução);
+  * Classificação de Frases (interpretação das frases e classificação);
+  * Extração de Entidades (nome que se dá para um termo em específico);
+  * Entre Outras Diversas Funções.
+
+Pré-processamento para aplicação da NLP
+
+1 - Tokenização - Separação da frase em elementos específicos.
+Exemplo: 
+Analisando por palavra = "Eu sou o negro" // Aplicando a Tokenização = ArrayFrase = ['Eu','sou', 'o','negro'] - Cada palavra é um token.
+Analisando por frase = Eu sou negro, porque nasci negro. Meus pais são negros. // Aplicando a Tokenização = ArrayTexto = ['Eu sou negro', 'porque nasci negro.' , 'Meus pais são negros.'] - Cada frase é um token.
+
+2 - Stopwords - Remoção de Stopwords, palavras sem peso relevante nas nossas frases para que possamos manter somente elementos relevantes como verbos, nomes, adjetivos, etc.
+Exemplo: 
+Analisando a frase = "Eu quero comprar uma televisão de 52 polegadas para ver o BBB".
+Removendo Stopwords = "Eu quero comprar televisão 52 polegadas ver BBB".
+
+**Não é obrigatório utilizar em todos os modelos, depende muito do objetivo da análise.
+
+3 - Steminização - Remover o genero, suficxo, plural, caracteres das palavras para que em alguns casos possamos padronizar e interpretar as palavras como um
+Exemplo:
+Temos 'colaboradores' e 'colaboradoras' em um mesmo contexto // com a Steminização ficaria 'colaborad'
+Temos 'carros' e 'carro' em um mesmo contexto // com a Steminização ficaria 'carr'
+
+**Não é obrigatório utilizar em todos os modelos, depende muito do objetivo da análise.
+
+Esses 3 passos são os mais comuns em uma análise, mas podemos aplicar diversos passos de acordo com a necessidade como Lowercasing, Uppercasing, remoção de palavras específicas, etc. 
+
+
