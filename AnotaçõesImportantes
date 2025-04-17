@@ -88,6 +88,16 @@ O Fuzzy Matching pode funcionar bem em pequenas distorções.
 
 Os dois modelos de classificação permite realizar a interpretação do input e assim realizar a análise necessária (atendimento específico no caso de serviços, tradução de um determinado termo, entre outros use cases)
 
+Processamento de Audio
+
+SST // Speech to Text (Speech Recognizer) - Reconhecimento de fala que reconhece o audio e transcreve para texto, desde que o modelo esteja codificado com o idioma de fala. Também é possível definir o idioma por meio da fala de input.
+TTS // Text to Speech - Reconhecimento de texto de modo a encontrar e encaixar as sílabas fonéticas para a pronuncia de uma frase.
+Voice Recognition - Autenticação por meio do input da voz, a IA capta e grava uma voz específica e reconhece os parâmetros para identificar uma pessoa. Reconhecimento mais pessoal e particular.
+
+É possível aplicar o modelo para o reconhecimento de determinados sinais de modo que uma maquina possa interpretar um determinado som e assim definir uma ação.
+
+Para o treinamento dos modelos, podemos utilizar serviços de Cloud ou construir o próprio modelo.
+
 
 
 
