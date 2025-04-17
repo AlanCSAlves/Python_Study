@@ -72,7 +72,21 @@ Quanto menor a distancia entre a frase a classe, maior é a confiança de que o 
 NER - Extração da Entidade
 É realizado o treinamento do modelo para identificar os principais termos relevantes (principais entidades) de um determinado contexto e assim atribuir uma classificação de acordo com o seu tipo
 
-Os dois modelos de classificação permite realizar a interpretação do input e assim realizar a análise necessário (atendimento específico no caso de serviços, tradução de um determinado termo, entre outros use cases)
+Exemplo:
+
+Quero solicitar um CARTÃO de CRÉDITO // Sistema separa as entidades CARTÃO e CRÉDITO e classificam = CARTÃO como um Produto e CRÉDITO como Tipo Cartão 
+Quero mais LIMITE no meu CARTÃO // Sistema separa as entidades LIMITE e CARTÃO e classificam = LIMITE como Valor Cartão e CARTÃO como um Produto 
+Quero contratar CRÉDITO PESSOAL // Sistema separa as entidades CRÉDITO e PESSOAL e classificam = CRÉDITO como Produto e PESSOAL como Tipo Crédito 
+
+Ao identificar essas entidades, o sistema irá encaminhar o input para um determinado conjunto de classes ja cadastrado.
+
+Nos casos acima, ele irá encaminhar o usuário para uma resposta previamente cadastrada para cada um dos questionamentos, mediante a interpretação dos conjuntos.
+
+Ele também pode aplicar o Fuzzy Matching para conseguir identificar alguns termos específicos que podem ter sido digitados de forma errada (tipo caltão e crérito por ex., o sistema pode aplicar o match e checar que as palavras são cartão e crédito).
+
+O Fuzzy Matching pode funcionar bem em pequenas distorções.
+
+Os dois modelos de classificação permite realizar a interpretação do input e assim realizar a análise necessária (atendimento específico no caso de serviços, tradução de um determinado termo, entre outros use cases)
 
 
 
