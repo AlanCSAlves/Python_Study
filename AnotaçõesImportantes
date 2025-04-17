@@ -40,6 +40,41 @@ Temos 'carros' e 'carro' em um mesmo contexto // com a Steminização ficaria 'c
 
 **Não é obrigatório utilizar em todos os modelos, depende muito do objetivo da análise.
 
-Esses 3 passos são os mais comuns em uma análise, mas podemos aplicar diversos passos de acordo com a necessidade como Lowercasing, Uppercasing, remoção de palavras específicas, etc. 
+Esses 3 passos são os mais comuns em uma análise, mas podemos aplicar diversos passos de acordo com a necessidade como Lowercasing, Uppercasing, remoção de palavras específicas, etc.
+
+Ao aplicar o pré-processamento em um determinado conjunto de texto, o NLP aplica a NLC - Classificação de Texto ou a NER - Extração de Entidade
+
+NLC - Classificação de Texto 
+É realizado o treinamento de um modelo de modo a definir um peso para cada uma das classes de frase, ou seja, o sistema pega um conjunto específico de informações para determinar que o peso alguns elementos correspondam a uma classe especifica.
+
+Exemplo:
+
+1º Classe = Frases com um peso entre 99.5 e 100
+2º Classe = Frases com um peso entre 70 e 80
+3º Classe = Frases com um peso entre 19 e 20
+
+O treinamento de classificação é aplicado.
+
+É feito um input de uma frase específica dentro do sistema.
+
+O sistema irá realiza a depuração da frase e atribuir um valor para cada um de seus elementos, o que permite que a frase possua um peso de 85 por exemplo.
+
+O sistema de classificação irá pegar essa frase e calcular a aproximação entre os valores das classes, de modo que a classificação seja definida pelo valor que mais se aproxima na escala.
+
+1º Classe = Frases com um peso entre 99.5 e 100
+2º Classe = Frases com um peso entre 70 e 80
+3º Classe = Frases com um peso entre 19 e 20
+
+A frase se enquadraria mais na 2º Classe, por possuir um valor mais aproximado dentro do modelo.
+
+Quanto menor a distancia entre a frase a classe, maior é a confiança de que o sistema está classificando corretamente. 
+
+NER - Extração da Entidade
+É realizado o treinamento do modelo para identificar os principais termos relevantes (principais entidades) de um determinado contexto e assim atribuir uma classificação de acordo com o seu tipo
+
+Os dois modelos de classificação permite realizar a interpretação do input e assim realizar a análise necessário (atendimento específico no caso de serviços, tradução de um determinado termo, entre outros use cases)
+
+
+
 
 
