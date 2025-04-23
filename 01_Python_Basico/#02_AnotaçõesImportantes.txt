@@ -1,0 +1,122 @@
+IA e Machine Learning
+
+Interligencia Artificial // Machine Learning // Deep Learning
+
+Inteligencia Arttificial se trata do conceito de aplicar a máquinas tarefas que deveriam ser realizadas por humanos, afim de otimizar processos.
+
+Machine Learning é o processo de aprendizado das máquinas, o que permite que elas possam tomar decisões e tirar conclusões com base no treinamento.
+
+Deep Learning é o aprendizado profundo e contínuo.
+
+NLP - Processamento de Linguagem Natural (Interpretação de Texto)
+
+É possível implementar em nuvem e também podemos usar bibliotecas específicas.
+
+É possível aplicar para:
+  * Análise de Sentimento;
+  * Tradução (definir o contexto da tradução);
+  * Classificação de Frases (interpretação das frases e classificação);
+  * Extração de Entidades (nome que se dá para um termo em específico);
+  * Entre Outras Diversas Funções.
+
+Pré-processamento para aplicação da NLP
+
+1 - Tokenização - Separação da frase em elementos específicos.
+Exemplo: 
+Analisando por palavra = "Eu sou o negro" // Aplicando a Tokenização = ArrayFrase = ['Eu','sou', 'o','negro'] - Cada palavra é um token.
+Analisando por frase = Eu sou negro, porque nasci negro. Meus pais são negros. // Aplicando a Tokenização = ArrayTexto = ['Eu sou negro', 'porque nasci negro.' , 'Meus pais são negros.'] - Cada frase é um token.
+
+2 - Stopwords - Remoção de Stopwords, palavras sem peso relevante nas nossas frases para que possamos manter somente elementos relevantes como verbos, nomes, adjetivos, etc.
+Exemplo: 
+Analisando a frase = "Eu quero comprar uma televisão de 52 polegadas para ver o BBB".
+Removendo Stopwords = "Eu quero comprar televisão 52 polegadas ver BBB".
+
+**Não é obrigatório utilizar em todos os modelos, depende muito do objetivo da análise.
+
+3 - Steminização - Remover o genero, suficxo, plural, caracteres das palavras para que em alguns casos possamos padronizar e interpretar as palavras como um
+Exemplo:
+Temos 'colaboradores' e 'colaboradoras' em um mesmo contexto // com a Steminização ficaria 'colaborad'
+Temos 'carros' e 'carro' em um mesmo contexto // com a Steminização ficaria 'carr'
+
+**Não é obrigatório utilizar em todos os modelos, depende muito do objetivo da análise.
+
+Esses 3 passos são os mais comuns em uma análise, mas podemos aplicar diversos passos de acordo com a necessidade como Lowercasing, Uppercasing, remoção de palavras específicas, etc.
+
+Ao aplicar o pré-processamento em um determinado conjunto de texto, o NLP aplica a NLC - Classificação de Texto ou a NER - Extração de Entidade
+
+NLC - Classificação de Texto 
+É realizado o treinamento de um modelo de modo a definir um peso para cada uma das classes de frase, ou seja, o sistema pega um conjunto específico de informações para determinar que o peso alguns elementos correspondam a uma classe especifica.
+
+Exemplo:
+
+1º Classe = Frases com um peso entre 99.5 e 100
+2º Classe = Frases com um peso entre 70 e 80
+3º Classe = Frases com um peso entre 19 e 20
+
+O treinamento de classificação é aplicado.
+
+É feito um input de uma frase específica dentro do sistema.
+
+O sistema irá realiza a depuração da frase e atribuir um valor para cada um de seus elementos, o que permite que a frase possua um peso de 85 por exemplo.
+
+O sistema de classificação irá pegar essa frase e calcular a aproximação entre os valores das classes, de modo que a classificação seja definida pelo valor que mais se aproxima na escala.
+
+1º Classe = Frases com um peso entre 99.5 e 100
+2º Classe = Frases com um peso entre 70 e 80
+3º Classe = Frases com um peso entre 19 e 20
+
+A frase se enquadraria mais na 2º Classe, por possuir um valor mais aproximado dentro do modelo.
+
+Quanto menor a distancia entre a frase a classe, maior é a confiança de que o sistema está classificando corretamente. 
+
+NER - Extração da Entidade
+É realizado o treinamento do modelo para identificar os principais termos relevantes (principais entidades) de um determinado contexto e assim atribuir uma classificação de acordo com o seu tipo
+
+Exemplo:
+
+Quero solicitar um CARTÃO de CRÉDITO // Sistema separa as entidades CARTÃO e CRÉDITO e classificam = CARTÃO como um Produto e CRÉDITO como Tipo Cartão 
+Quero mais LIMITE no meu CARTÃO // Sistema separa as entidades LIMITE e CARTÃO e classificam = LIMITE como Valor Cartão e CARTÃO como um Produto 
+Quero contratar CRÉDITO PESSOAL // Sistema separa as entidades CRÉDITO e PESSOAL e classificam = CRÉDITO como Produto e PESSOAL como Tipo Crédito 
+
+Ao identificar essas entidades, o sistema irá encaminhar o input para um determinado conjunto de classes ja cadastrado.
+
+Nos casos acima, ele irá encaminhar o usuário para uma resposta previamente cadastrada para cada um dos questionamentos, mediante a interpretação dos conjuntos.
+
+Ele também pode aplicar o Fuzzy Matching para conseguir identificar alguns termos específicos que podem ter sido digitados de forma errada (tipo caltão e crérito por ex., o sistema pode aplicar o match e checar que as palavras são cartão e crédito).
+
+O Fuzzy Matching pode funcionar bem em pequenas distorções.
+
+Os dois modelos de classificação permite realizar a interpretação do input e assim realizar a análise necessária (atendimento específico no caso de serviços, tradução de um determinado termo, entre outros use cases)
+
+Processamento de Audio
+
+SST // Speech to Text (Speech Recognizer) - Reconhecimento de fala que reconhece o audio e transcreve para texto, desde que o modelo esteja codificado com o idioma de fala. Também é possível definir o idioma por meio da fala de input.
+TTS // Text to Speech - Reconhecimento de texto de modo a encontrar e encaixar as sílabas fonéticas para a pronuncia de uma frase.
+Voice Recognition - Autenticação por meio do input da voz, a IA capta e grava uma voz específica e reconhece os parâmetros para identificar uma pessoa. Reconhecimento mais pessoal e particular.
+
+É possível aplicar o modelo para o reconhecimento de determinados sinais de modo que uma maquina possa interpretar um determinado som e assim definir uma ação.
+
+Para o treinamento dos modelos, podemos utilizar serviços de Cloud ou construir o próprio modelo.
+
+Machine Learning Supervisionado - Quando possuimos uma base para realizar o treinamento do modelo, possuimos uma massa de treino para realizar o input dos dados.
+
+O sistema irá realizar os cálculos de acordo com os inputs e definir os outputs, de modo que irá realizar um comparativo entre o previsto e o real para o cálculo da função perda.
+
+Para realizar este procedimento devemos pegar a massa de dados e separar:
+
+Train Data Set x Test Data Set.
+
+80% da massa = Train para criação e treinamento do modelo // 20% da massa = Teste para validar a eficiencia do modelo.
+
+Modelos Supervisionados podem ser:
+**Regressão = Para a previsão ou predição de um valor numérico contínuo. Ex:. Prever um valor de aluguel, valor de um carro, volume de vendas, etc.
+***Regressão Multipla - Muitas características para os dados (muitas variáveis) // Regresão Simples - Somente uma variável.
+Existem diversos tipos de Regressões
+
+
+
+
+
+
+
+
