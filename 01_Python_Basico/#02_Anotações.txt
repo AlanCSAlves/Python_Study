@@ -112,6 +112,7 @@ Modelos Supervisionados podem ser:
 **Regressão = Para a previsão ou predição de um valor numérico contínuo. Ex:. Prever um valor de aluguel, valor de um carro, volume de vendas, etc.
 ***Regressão Multipla - Muitas características para os dados (muitas variáveis) // Regresão Simples - Somente uma variável.
 Existem diversos tipos de Regressões
+**Classificação = Com base em um conjunto geral de dados, o modelo permite rotular um item de acordo com os seus parametros.
 
 
 
