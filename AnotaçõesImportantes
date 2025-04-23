@@ -98,6 +98,24 @@ Voice Recognition - Autenticação por meio do input da voz, a IA capta e grava 
 
 Para o treinamento dos modelos, podemos utilizar serviços de Cloud ou construir o próprio modelo.
 
+Machine Learning Supervisionado - Quando possuimos uma base para realizar o treinamento do modelo, possuimos uma massa de treino para realizar o input dos dados.
+
+O sistema irá realizar os cálculos de acordo com os inputs e definir os outputs, de modo que irá realizar um comparativo entre o previsto e o real para o cálculo da função perda.
+
+Para realizar este procedimento devemos pegar a massa de dados e separar:
+
+Train Data Set x Test Data Set.
+
+80% da massa = Train para criação e treinamento do modelo // 20% da massa = Teste para validar a eficiencia do modelo.
+
+Modelos Supervisionados podem ser:
+**Regressão = Para a previsão ou predição de um valor numérico contínuo. Ex:. Prever um valor de aluguel, valor de um carro, volume de vendas, etc.
+***Regressão Multipla - Muitas características para os dados (muitas variáveis) // Regresão Simples - Somente uma variável.
+Existem diversos tipos de Regressões
+
+
+
+
 
 
 
