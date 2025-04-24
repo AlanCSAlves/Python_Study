@@ -162,8 +162,45 @@ A cada rodada devemos extrair os parametros do modelo para verificar a sua asser
 Underfitting - O modelo está muito fraco, de modo que não consegue prever ou predizer com efetividade novos inputs.
 Overfitting - Oposto do Under, com o Over modelo está muito ajustado para a massa de teste, de modo que não consegue prever ou predizer com efetividade novos inputs, por não se adaptar.
 
-O modelo não precisa ser exatamente perfeito, ele precisa ser robusto e maleável com a entrada de novos dados, de modo a não variar muito nas classificações, sendo mais generalista com os dados. 
+O modelo não precisa ser exatamente perfeito, ele precisa ser robusto e maleável com a entrada de novos dados, de modo a não variar muito nas classificações, sendo mais generalista com os dados.
 
+Machine Learning Não Supervisionado - Quando não possuímos uma base para realizar o treinamento do modelo, o modelo por si só deve encontrar padroes e similaridades para realizar as análises.
 
+Através da detecção de Anomalias ele observa os aspectos e classifica as respostas.
 
+Modelos Supervisionados podem ser:
+Clusterização - Agrupamento dos dados em categorias semelhantes, como desterminados padrões semelhantes.
+Podendo ser:
+Clusterização Exclusiva (Exclusive Clustering) - Um agente não pode participar de mais de uma categoria ao mesmo tempo
+Clusterização Sobreposta (Overlapping Clustering) - Um agente pode participar de mais de uma categoria
+Clusterização Hierarquica - Quebrando as informações por hierarquia.
+
+Pode ser aplicado de diversas formas.
+
+Modelo de Recomendação - O algoritmo detecta os padrões de comportamento e sugerem algo.
+Podendo ser:
+
+Content Based-Filtering 
+**O sistema, com base no seu User Rating x Matriz de Categoria de Produtos, define uma pontuação para o seu User Profile e calcula um padrão de consumo de acordo com as categorias dos produtos mediante a interação do usuário.
+Ao utilizar somente o critério de interação, o modelo só irá recomendar coisas que interagimos, nunca nada novo.
+
+Colaborative Filtering
+**O sistema não usa somente a sua interação de usuário, utiliza a de diversos outros usuários que possuem hajam similaridades entre si.
+Desta forma, o sistema pode pontuar mais as interações e sugerir itens que outros perfis similares pontuaram mais.
+Como o calculo de similaridade pode ser complexo, pode ser mais dificil esse sistema possuir escalabilidade.
+
+Uma alternativa interessante seria desenvolver um modelo hibrido para que os modelos possam se complementar entre si.
+
+Métricas de Avaliação:
+
+Varia muito de acordo com o caso, pois as analises feitas pelo sistema podem ser diversas.
+
+Para a Clusterização:
+Slihouette Score - Fórmula calculada utilizando:
+A = O centro de um grupo e a distancia médio de todos os elementos deste grupo
+B = O centro de um grupo e a distancia outro grupo
+
+Para a Recomendação:
+MRR (Mean Reciprocal Rank) - Calcula a recomendação com base no seu gosto principal
+MAP (Mean Average Precision) - Calcula a recomendação média para uma lista, porém a classificação é binária (relevante e não relevante)
 
