@@ -4,7 +4,7 @@ Interligencia Artificial // Machine Learning // Deep Learning
 
 Inteligencia Arttificial se trata do conceito de aplicar a máquinas tarefas que deveriam ser realizadas por humanos, afim de otimizar processos.
 
-Machine Learning é o processo de aprendizado das máquinas, o que permite que elas possam tomar decisões e tirar conclusões com base no treinamento.
+Machine Learning é o processo de aprendizado das máquinas, o que permite que elas possam tomar decisões e tirar conclusões com base no treinamento ou não.
 
 Deep Learning é o aprendizado profundo e contínuo.
 
@@ -113,7 +113,28 @@ Modelos Supervisionados podem ser:
 ***Regressão Multipla - Muitas características para os dados (muitas variáveis) // Regresão Simples - Somente uma variável.
 Existem diversos tipos de Regressões
 **Classificação = Com base em um conjunto geral de dados, o modelo permite rotular um item de acordo com os seus parametros.
+Assim como os modelos de Regressão, os tipos de classificação podem ser diversos.
 
+Dentro dos 2 exemplos, existem diversas meios de se realizar o processo.
+
+Métricas de Avaliação dos modelos de Regressão:
+R Square / Adjusted R Square - Mede o quanto o modelo consegue se ajustar às mudanças das variáveis de entrada.
+O R Square não pode ficar muito abaixo de 1, pois isso demonstraria que o modelo não está muito ajustado aos dados (Underfitting)
+O R Square não pode ficar próximo ou ser exatamente 1, pois isso demonstraria que o está extremamente preso ao conjunto de dados, o que poderia gerar distorções nos resultados (Overfitting)
+Uma métrica que auxilia no ajuste do modelo seria o Adjusted R Square, pois ela penaliza o modelo quando ele se ajusta demais a massa de treino.
+
+MSE/RMSE (Mean Square Error // Root Mean Square Error) - Mede a qualidade geral do modelo através da média de erros na massa de teste e eleva ao quadrado
+MSE - Utiliza o quadrado da média de erros na massa de teste. O RMSE é a raíz quadrada do MSE, pois o MSE pode se tornar um número muito grande, sua raíz quadrada facilitaria a análise.
+
+MAE (Mean Absolut Error) - Média absoluta dos erros, considerando que todos os erros são iguais.
+
+Quando usar cada uma das metricas:
+R Square / Adjusted R Square - Necessário quando precisamos apresentar o modelo a alguém, o fato dele girar em torno de 0 a 1 pode facilitar através do cálculo porcentual.
+MSE/RMSE/MAE - Necessário para identificar qual seria o melhor modelo, qual a melhor curva de regressão para o nosso Use Case.
+
+Podemos utilizar as metricas do MSE e RMSE caso seja necessário penalizar muito modelo por cometer erros. Se o uso não for muito rigoroso e os erros fazem algum sentido no Use Case geral, podemos utilizar o MAE.
+
+Métricas de Avaliação dos modelos de Classificação:
 
 
 
