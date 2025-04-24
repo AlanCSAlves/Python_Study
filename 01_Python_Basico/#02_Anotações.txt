@@ -159,7 +159,10 @@ Interação 4 - Treino // Treino // Treino // TESTE
 
 A cada rodada devemos extrair os parametros do modelo para verificar a sua assertividade.
 
+Underfitting - O modelo está muito fraco, de modo que não consegue prever ou predizer com efetividade novos inputs.
+Overfitting - Oposto do Under, com o Over modelo está muito ajustado para a massa de teste, de modo que não consegue prever ou predizer com efetividade novos inputs, por não se adaptar.
 
+O modelo não precisa ser exatamente perfeito, ele precisa ser robusto e maleável com a entrada de novos dados, de modo a não variar muito nas classificações, sendo mais generalista com os dados. 
 
 
 
