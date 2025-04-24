@@ -141,9 +141,26 @@ Antes de distrinchar as métricas, precisar interpretar o conceito de Matriz de 
 Verdadeiro Negativo // Verdadeiro Positivo = Quando os valores são classificados corretamente (Negativo como Negativo // Positivo como Positivo)
 Falso Negativo // Falso Positivo = Quando os valores não são classificados corretamente (Negativo como Positivo // Positivo como Negativo)
 
-A métrica de acuracidade é calculada como base na resposta do modelo:
+A métricas são calculadas como base nas respostas do modelo:
 
-Acuracidade = (Verdadeiro Negativo + Verdadeiro Positivo) / Amostra Total
+Acuracidade = (Verdadeiro Negativo + Verdadeiro Positivo) / Amostra Total - Esta métrica avalia as respostas corretas, quanto o modelo classificou corretamente.
+Precisão = Verdadeiro Positivo / (Verdadeiro Positivo + Falso Positivo) = Verdadeiro Positivo / Total Previsto como Positivo - Esta métrica é aplicada quando o risco de classificarmos um falso positivo é alto, essa métrica acaba penalizando o modelo.
+Recall = Verdadeiro Positivo / (Verdadeiro Positivo + Falso Negativo) = Verdadeiro Positivo / Total Positivo Atual - Esta métrica é aplicada quando o risco de classificarmos um falso negativo é alto, essa métrica também penaliza o modelo.
+
+F1 Score = 2 x (Precisão * Recall) / (Precisão + Recall) - Avalia o modelo utilizando tanto a Precisão quanto o Recall, de modo a penalizar o modelo quando a classificação é incorreta. O objetivo do F1 Score é manter um equilibrio entre os erros.
+
+K-Fold Cross Validation - Essa validação permite que possamos dividir a massa teste em partes iguais para que em cada interação possamos variar as partes em massas de Treino/Teste
+
+Ex:
+Interação 1 - TESTE // Treino // Treino // Treino
+Interação 2 - Treino // TESTE // Treino // Treino
+Interação 3 - Treino // Treino // TESTE // Treino
+Interação 4 - Treino // Treino // Treino // TESTE
+
+A cada rodada devemos extrair os parametros do modelo para verificar a sua assertividade.
+
+
+
 
 
 
