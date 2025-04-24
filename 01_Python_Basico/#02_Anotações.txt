@@ -1,4 +1,4 @@
-IA e Machine Learning
+ IA e Machine Learning
 
 Interligencia Artificial // Machine Learning // Deep Learning
 
@@ -136,9 +136,14 @@ Podemos utilizar as metricas do MSE e RMSE caso seja necessário penalizar muito
 
 Métricas de Avaliação dos modelos de Classificação:
 
+Antes de distrinchar as métricas, precisar interpretar o conceito de Matriz de Confusão:
 
+Verdadeiro Negativo // Verdadeiro Positivo = Quando os valores são classificados corretamente (Negativo como Negativo // Positivo como Positivo)
+Falso Negativo // Falso Positivo = Quando os valores não são classificados corretamente (Negativo como Positivo // Positivo como Negativo)
 
+A métrica de acuracidade é calculada como base na resposta do modelo:
 
+Acuracidade = (Verdadeiro Negativo + Verdadeiro Positivo) / Amostra Total
 
 
 
