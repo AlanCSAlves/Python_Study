@@ -72,3 +72,15 @@ O processo de Machine Learning pode ser dividido em duas grandes vertentes:
 
 ---
 
+### Problemas comuns (precisamos evitar)
+
+- **Underfitting:**
+  - Modelo fraco, incapaz de capturar padrões dos dados.
+  - Baixo desempenho tanto em treino quanto em teste.
+
+- **Overfitting:**
+  - Modelo muito ajustado ao conjunto de treino.
+  - Alto desempenho em treino, mas baixo em dados novos.
+
+**Objetivo:** Ter um modelo **robusto** e **maleável**, capaz de generalizar bem para novos dados, mesmo que não seja perfeito.
+
