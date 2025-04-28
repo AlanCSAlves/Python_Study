@@ -9,7 +9,6 @@ Antes de aplicar as métricas, é importante entender a **Matriz de Confusão**:
 
 ### Principais métricas:
 
-- **Acurácia:**
   \[ \text{Acurácia} = \frac{VP + VN}{\text{Total de Amostras}} \]
   - Mede a porcentagem de classificações corretas.
 
