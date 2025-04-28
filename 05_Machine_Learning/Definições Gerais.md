@@ -42,10 +42,9 @@ Exemplos de aplicações:
 
 ---
 
-# Vertentes de Machine Learning
 O processo de Machine Learning pode ser dividido em duas grandes vertentes:
 
-## 1. Machine Learning Supervisionado
+## Machine Learning Supervisionado
 - Ocorre quando possuímos uma base de dados rotulada para treinar o modelo.
 - Cada entrada de dados tem um "rótulo" associado, permitindo que o algoritmo aprenda a fazer associações corretas entre inputs e outputs.
 - O sistema realiza cálculos com base nos dados de entrada e define previsões para os dados de saída, comparando essas previsões com os valores reais para calcular a **função de perda** (*loss function*).
@@ -61,7 +60,7 @@ O processo de Machine Learning pode ser dividido em duas grandes vertentes:
 
 ---
 
-## 2. Machine Learning Não Supervisionado
+## Machine Learning Não Supervisionado
 - Utilizado quando não possuímos rótulos nos dados.
 - O objetivo é identificar **padrões ocultos**, **agrupamentos** ou **anomalias** dentro dos dados sem supervisão humana.
 - O modelo aprende por conta própria como organizar as informações, detectando **similaridades** e **diferenças** entre os exemplos.
