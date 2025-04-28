@@ -5,12 +5,6 @@
 A Inteligência Artificial (IA) é o campo da ciência da computação que busca criar sistemas capazes de realizar tarefas que normalmente requerem inteligência humana, como raciocínio, percepção, tomada de decisão e adaptação a novas informações.  
 Seu principal objetivo é **automatizar processos**, aumentar a **eficiência** e permitir que máquinas **executem funções complexas** de maneira autônoma ou semiautônoma.
 
-Exemplos de aplicações:
-- Diagnóstico médico assistido
-- Assistentes virtuais (como Alexa, Siri)
-- Sistemas de recomendação (Netflix, Amazon)
-- Veículos autônomos
-
 ---
 
 ## Machine Learning (ML)
@@ -18,12 +12,7 @@ Exemplos de aplicações:
 O Machine Learning é um subcampo da IA focado no desenvolvimento de algoritmos que permitem às máquinas **aprender a partir de dados**.  
 Em vez de serem explicitamente programadas para cada tarefa, as máquinas identificam padrões e **ajustam seus comportamentos** com base na experiência.
 
-### Principais características:
-- **Treinamento supervisionado**: O modelo aprende a partir de dados rotulados (com respostas corretas conhecidas).
-- **Treinamento não supervisionado**: O modelo encontra padrões ou agrupamentos em dados sem rótulos.
-- **Treinamento por reforço**: O modelo aprende por tentativa e erro, recebendo recompensas ou penalidades.
-
-Machine Learning é o motor que impulsiona muitos dos sistemas inteligentes que usamos no dia a dia, desde filtros de spam até predições de consumo de energia.
+ML é o motor que impulsiona muitos dos sistemas inteligentes que usamos no dia a dia, desde filtros de spam até predições de consumo de energia.
 
 ---
 
@@ -51,5 +40,36 @@ Exemplos de aplicações:
 - **ML** é uma abordagem prática para alcançar IA, focada em aprendizado baseado em dados.
 - **DL** é uma técnica especializada dentro do ML que utiliza redes neurais profundas para resolver problemas altamente complexos.
 
-Visualmente:
+---
+
+# Vertentes de Machine Learning
+O processo de Machine Learning pode ser dividido em duas grandes vertentes:
+
+## 1. Machine Learning Supervisionado
+- Ocorre quando possuímos uma base de dados rotulada para treinar o modelo.
+- Cada entrada de dados tem um "rótulo" associado, permitindo que o algoritmo aprenda a fazer associações corretas entre inputs e outputs.
+- O sistema realiza cálculos com base nos dados de entrada e define previsões para os dados de saída, comparando essas previsões com os valores reais para calcular a **função de perda** (*loss function*).
+
+### Divisão da massa de dados:
+- **80%** dos dados são utilizados para **treinamento** do modelo (*Train Data Set*).
+- **20%** dos dados são utilizados para **teste** e **validação** da eficiência do modelo (*Test Data Set*).
+
+### Exemplos de Machine Learning Supervisionado:
+- Previsão do preço de imóveis (*regressão*).
+- Classificação de e-mails como spam ou não spam.
+- Diagnóstico médico baseado em exames clínicos.
+
+---
+
+## 2. Machine Learning Não Supervisionado
+- Utilizado quando não possuímos rótulos nos dados.
+- O objetivo é identificar **padrões ocultos**, **agrupamentos** ou **anomalias** dentro dos dados sem supervisão humana.
+- O modelo aprende por conta própria como organizar as informações, detectando **similaridades** e **diferenças** entre os exemplos.
+
+### Exemplos de Machine Learning Não Supervisionado:
+- Clusterização de clientes para campanhas de marketing.
+- Detecção de anomalias em transações financeiras.
+- Agrupamento de documentos por tema.
+
+---
 
