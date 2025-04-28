@@ -11,5 +11,5 @@
 #### Quando usar cada métrica
 - **R² / Adjusted R²:** Para apresentação de resultados de maneira interpretável.
 - **MSE/RMSE/MAE:** Para avaliação e comparação da performance entre diferentes modelos.
-  - **MSE/RMSE:** Penalizam erros maiores.
-  - **MAE:** Menos sensível a grandes erros.
+  - **MSE/RMSE:** Penalizam erros maiores (Caso seja necessário penalizar muito modelo por cometer erros).
+  - **MAE:** Menos sensível a grandes erros (Preferível se os erros fazem algum sentido no Use Case geral).
