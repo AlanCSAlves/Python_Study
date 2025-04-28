@@ -54,7 +54,7 @@ O treinamento de classificação é aplicado e são definidas as seguintes class
 - Classe B: peso 70–80
 - Classe C: peso 19–20
 
-- É feito o input das informações de modo que o faça a depuração da frase, a fim de atribuir um valor para cada um de seus elementos, o que permite que a frase possua um peso de 85 por exemplo.
+- É feito o input das informações de modo que o modelo faça a depuração da frase, a fim de atribuir um valor para cada um de seus elementos, o que permite que a frase possua um peso de 81, por exemplo.
 - A Classificação é feita com base na aproximação entre os valores das classes, de modo que seja definida pelo valor que mais se aproxima na escala.
 - Neste exemplo, o input se enquadraria mais na 2º Classe, por possuir um valor mais aproximado dentro do modelo.
 - Quanto menor a distancia entre a frase a classe, maior é a confiança de que o sistema está classificando corretamente. 
