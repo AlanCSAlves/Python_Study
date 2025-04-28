@@ -9,20 +9,17 @@ Antes de aplicar as métricas, é importante entender a **Matriz de Confusão**:
 
 ### Principais métricas:
 
-  \[ \text{Acurácia} = \frac{VP + VN}{\text{Total de Amostras}} \]
-  - Mede a porcentagem de classificações corretas.
+**Acurácia:** (VP + VN) / Total de Amostras  
+- Mede a porcentagem de classificações corretas.
 
-- **Precisão:**
-  \[ \text{Precisão} = \frac{VP}{VP + FP} \]
-  - Foco em minimizar falsos positivos.
+**Precisão:** VP / (VP + FP)  
+- Foco em minimizar falsos positivos.
 
-- **Recall:**
-  \[ \text{Recall} = \frac{VP}{VP + FN} \]
-  - Foco em minimizar falsos negativos.
+**Recall:** VP / (VP + FN)  
+- Foco em minimizar falsos negativos.
 
-- **F1 Score:**
-  \[ \text{F1} = 2 \times \frac{\text{Precisão} \times \text{Recall}}{\text{Precisão} + \text{Recall}} \]
-  - Balanceia Precisão e Recall.
+**F1 Score:** 2 × (Precisão × Recall) / (Precisão + Recall)  
+- Balanceia Precisão e Recall.
 
 ### Validação de Modelos: K-Fold Cross Validation
 
