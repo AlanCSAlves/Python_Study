@@ -24,3 +24,12 @@ CD (Continuos Delivery) = Etapa em que o código, uma vez aprovado, é inserido 
 CT (Continuos Training) = Treinamento contínuo do sistema geral, visando adaptar o sistema para uma nova realidade de negócio.
 
 O ML Ops é uma maneira organizada para se estruturar grandes mudanças em modelos de larga escala.
+
+# Viés de Inteligencia Artificial (Bias)
+
+Temos que tomar cuidado com as tendencias ja direcionadas em nossos conjuntos de dados, pois as tendencias podem prejudicar os modelos.
+Devemos avaliar as variáveis pessoais de modo a não criar nenhuma tendencia para nenhum dos lados, deve ser o mais geral possivel.
+
+Existem bibliotecas que podem analisar os modelos, a fim de detectar tendencias possíveis:
+AI Fairness 360 - https://aif360.mybluemix.net/
+
