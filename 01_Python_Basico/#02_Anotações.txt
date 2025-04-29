@@ -33,3 +33,13 @@ Devemos avaliar as variáveis pessoais de modo a não criar nenhuma tendencia pa
 Existem bibliotecas que podem analisar os modelos, a fim de detectar tendencias possíveis:
 AI Fairness 360 - https://aif360.mybluemix.net/
 
+Explicabilidade de um modelo de AI (xAI) 
+
+É muito importante entender como o modelo funciona, o que ele faz, quais o resultados que podemos obter e como os obteremos, de modo a passar mais confiança para que o processo seja instaurado.
+
+Ferramentas que permitem desenvolver melhor explicabilidade para um modelos:
+AI Explainability 360 -https://aix360.mybluemix.net/
+Local Interpretable Model - Agnostic Explanations (lime) - https://lime-ml.readthedocs.io/en/latest/
+Watson Open Scale
+
+
