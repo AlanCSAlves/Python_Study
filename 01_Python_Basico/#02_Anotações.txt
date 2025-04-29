@@ -1,4 +1,26 @@
 # Machine Learning Por Reforço
 
+O modelo treina um agente para interagir com um ambiente, podendo ele ser recompensado ou penalizado com base nas suas decisões, de modo a aprimorar a sua eficiencia enquanto ele avança.
 
+A nossa principal em um modelo como este é criar um ambiente extremamente regrado e com a complexidade necessária para que o agente possa se desenvolver e sobressair. 
 
+# AutoML (Automated Machine Learning)
+
+Ele utiliza algumas tecnologias para otimizar e automatizar algumas etapas no processo de tratamento dos dados.
+
+Ele trabalha em 3 frentes:
+
+Seleção Automática de Modelos (Automated Model Selection) - Através da massa de dados, ele rankeia e seleciona os melhores modelos para o conjunto de informações.
+Ele não realizada todo o processo até o fim, mas ele pode filtrar quais seriam os melhores algoritmos para situação, de modo a poupar tempo dos Analistas com testes posteriores.
+
+Seleção Automática das Variáveis que influenciam no modelo (Automated Filtering Enginnering) - Ele pode auxiliar no resumo de quais variaveis seriam interessantes para uso no modelo. 
+
+Automação e Otimização de Hiperparametros (Automated Hyperparameter Optimization) - Ajuda o modelo a encontrar quais seriam os melhores hiperparametros.
+
+# ML Ops - Operacionalização dos Modelos de ML
+
+CI (Continuos Integration) = Etapa responsável pelo Ambiente de Desenvolvimento // Ambiente de Teste/Homologação
+CD (Continuos Delivery) = Etapa em que o código, uma vez aprovado, é inserido em Ambiente de Produção para aplicação.
+CT (Continuos Training) = Treinamento contínuo do sistema geral, visando adaptar o sistema para uma nova realidade de negócio.
+
+O ML Ops é uma maneira organizada para se estruturar grandes mudanças em modelos de larga escala.
