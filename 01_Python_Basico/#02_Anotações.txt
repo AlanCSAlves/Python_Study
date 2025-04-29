@@ -42,4 +42,14 @@ AI Explainability 360 -https://aix360.mybluemix.net/
 Local Interpretable Model - Agnostic Explanations (lime) - https://lime-ml.readthedocs.io/en/latest/
 Watson Open Scale
 
+# Como ESTUDAR Inteligencia Artificial:
+
+Mão na MASSA, precisamos colocar a mão na massa e se entregar pro processo, entre erros e acertos.
+Estudando novos termos
+Buscar compreender os entremeios da área
+Acompanhar Newsletter pode ser uma boa alternativa também
+DeepLearning AI - Andrew Nd
+Felipe dechamps - Newsletter de tecnologia
+Canais Gringos como a Wired, tecnology review
+
 
